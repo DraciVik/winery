@@ -4,32 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      href="node_modules/ekko-lightbox/dist/ekko-lightbox.min.js"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Kovin</title>
+    <title>KOWINE</title>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
       <div class="container">
         <a href="index.html" class="navbar-brand"
-          ><img id="logo" src="img/cropped-zik-new.png" alt="logo"
-        /></a>
+          ><em
+            ><h1 id="titleKowine">KOWINE</h1>
+            <p id="titleP">Wine broker and distributor of quality wines</p></em
+          >
+        </a>
         <button
           class="navbar-toggler"
           data-toggle="collapse"
@@ -49,7 +51,7 @@
               <a href="services.html" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
+              <a href="howTo.html" class="nav-link">How to buy</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
@@ -58,7 +60,6 @@
         </div>
       </div>
     </nav>
-
     <!-- SHOWCASE SLIDER -->
     <section id="showcase">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -70,16 +71,15 @@
         <div class="carousel-inner">
           <div class="carousel-item carousel-image-1 active">
             <div class="container">
-              <div class="carousel-caption d-none d-sm-block text-right mb-5">
-                <h1 class="display-3">Heading One</h1>
+              <div class="carousel-caption d-none d-sm-block text-center mb-5">
+                <h1 class="display-3">Sustainable development</h1>
                 <p class="lead">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-                  aperiam vel ullam deleniti reiciendis ratione quod aliquid
-                  inventore vero perspiciatis.
+                  KOWINE is committed to sustainable development and strives to
+                  become trusted and remarkable wine broker and distribution
+                  company in the wine industry of the Macedonian and European
+                  market, that continuously aims to add value to its customers,
+                  employees and owners.
                 </p>
-                <a href="#" class="btn btn-outline-danger btn-lg"
-                  >Sign Up Now</a
-                >
               </div>
             </div>
           </div>
@@ -87,31 +87,28 @@
           <div class="carousel-item carousel-image-2">
             <div class="container">
               <div class="carousel-caption d-none d-sm-block mb-5">
-                <h1 class="display-3">Heading Two</h1>
+                <h1 class="display-3">Our mission</h1>
+
                 <p class="lead">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-                  aperiam vel ullam deleniti reiciendis ratione quod aliquid
-                  inventore vero perspiciatis.
+                  Our mission is identifying and offering a selection of high
+                  quality wines that provide the best value for customers at all
+                  price points. We are committed to deliver exceptional services
+                  to all of our clients and to build trustworthy and sustainable
+                  partnerships
                 </p>
-                <a href="#" class="btn btn-outline-primary btn-lg"
-                  >Learn More</a
-                >
               </div>
             </div>
           </div>
 
           <div class="carousel-item carousel-image-3">
             <div class="container">
-              <div class="carousel-caption d-none d-sm-block text-left mb-5">
-                <h1 class="display-3">Heading Three</h1>
+              <div class="carousel-caption d-none d-sm-block mb-5">
+                <h1 class="display-3">Women empowerment</h1>
                 <p class="lead">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-                  aperiam vel ullam deleniti reiciendis ratione quod aliquid
-                  inventore vero perspiciatis.
+                  we provide educational and work opportunities to empower women
+                  with fewer opportunities, assistance and social protection for
+                  single mothers from the North-east region in Macedonia.
                 </p>
-                <a href="#" class="btn btn-outline-success btn-lg"
-                  >Learn More</a
-                >
               </div>
             </div>
           </div>
@@ -133,7 +130,7 @@
         <div class="row">
           <div class="col-md-4 mb-4 text-center">
             <i class="fas fa-wine-bottle fa-3x mb-2"></i>
-            <h3>Manufacturing wine</h3>
+            <h3>Strategic Partnerships</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero,
               veniam.
@@ -143,8 +140,8 @@
             <i class="fas fa-shuttle-van fa-3x mb-2"></i>
             <h3>Distribution</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero,
-              veniam.
+              Official distributer for
+              <a class="linkToZik" href="http://zikwine.com/">ZIKWINERY</a>
             </p>
           </div>
           <div class="col-md-4 mb-4 text-center">
@@ -165,12 +162,12 @@
         <div class="row">
           <div class="col">
             <div class="container pt-5">
-              <h1>Are You Ready To Get Started?</h1>
-              <p class="d-none d-md-block">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
-                eaque magni sit dolores. Nisi, dolor nam modi perspiciatis
-                consequatur soluta.
-              </p>
+              <h1>
+                We are official distributors for
+                <a class="linkToZik" target="_blank" href="http://zikwine.com/"
+                  >ZIKWINERY</a
+                >
+              </h1>
             </div>
           </div>
         </div>
@@ -182,13 +179,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 align-self-center">
-            <h3>Lorem Ipsum</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              eveniet blanditiis incidunt iusto corrupti illum cum laudantium ex
-              sequi amet.
-            </p>
-            <a href="about.html" class="btn btn-outline-danger btn-lg"
+            <h2>Check out our assortment of products</h2>
+            <a
+              href="about.html"
+              class="btn btn-outline-danger btn-lg"
+              data-toggle="modal"
+              data-target="#aboutModal"
               >Learn More</a
             >
           </div>
@@ -304,12 +300,9 @@
       </div>
     </section>
 
-    <!-- NEWSLETTER -->
     <section id="contact" class="p-1 text-white">
-      <h6>Get In Touch</h6>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, odio!
-      </p>
+      <h4>Get In Touch</h4>
+
       <h6>Address</h6>
       <p>
         s. Gradishte 1300,<br />
@@ -334,6 +327,46 @@
         </div>
       </div>
     </footer>
+    <!-- About modal -->
+    <div class="modal fade" id="aboutModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <blockquote class="blockquote text-center">
+              <h2 class="mb-0">About our Vranec</h2>
+              <footer class="blockquote-footer text-right">
+                Produces by <cite title="Source Title">ZIKWINERY</cite>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="modal-body">
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+            <p>
+              The variety Vranec has got exuberant grapevine, middle-sized
+              clusters and dark blue grapes with colored skin enriched by
+              coloring substances. It ripens in the second half of September.
+              The wine that comes from this variety is recognized by its
+              intensive coloration. The high content of the total number of
+              anthocyanin is the main characteristic of this variety of wines,
+              which makes them unique. The wine is suitable for blending with
+              the wine varieties Merlot, Cabernet Sauvignon and Syrah, as well
+              as with wine used for repairmen of their color. The wine from
+              Vranec variety has an intense, dark red color. It exhibits a
+              varietal and rich scent with aroma of ripe fruits. The taste is
+              full, with gentle structure and harmony. The young wines have a
+              light purple color, with an aroma of strawberry jam and wild
+              berries and firm tannins structure with potential to ripe in oak
+              barrels. When the mellowing is finished, they provide quality,
+              cultivating complex aroma of dry fruit and cocoa. This wine has a
+              harmony of complex aromas similar to wild berries, rich tannins,
+              chocolate and liquor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- VIDEO MODAL -->
     <div class="modal fade" id="videoModal">
@@ -355,54 +388,11 @@
       </div>
     </div>
 
-    <script
-      src="http://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/ekko-lightbox/dist/ekko-lightbox.js"></script>
 
-    <script>
-      // Get the current year for the copyright
-      $("#year").text(new Date().getFullYear());
-
-      // Configure Slider
-      $(".carousel").carousel({
-        interval: 6000,
-        pause: "hover"
-      });
-
-      // Lightbox Init
-      $(document).on("click", '[data-toggle="lightbox"]', function(event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-      });
-
-      // Video Play
-      $(function() {
-        // Auto play modal video
-        $(".video").click(function() {
-          var theModal = $(this).data("target"),
-            videoSRC = $(this).attr("data-video"),
-            videoSRCauto =
-              videoSRC +
-              "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-          $(theModal + " iframe").attr("src", videoSRCauto);
-          $(theModal + " button.close").click(function() {
-            $(theModal + " iframe").attr("src", videoSRC);
-          });
-        });
-      });
-    </script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
